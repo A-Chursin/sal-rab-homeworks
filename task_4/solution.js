@@ -17,10 +17,9 @@ function renderProductsCards(json) {
     products = parseProducts(json);
     length = products.length;
     let i = 0;
-    do {
-        addProduct(products[i]);
-        i++;
-    } while (i < length);
+    for (let i = 0; i < length; i++) {
+        addProduct(products[i]);        
+    }
 }
 // Напишите функцию renderProductsCards(json)
 // Аргументом функции является JSON
